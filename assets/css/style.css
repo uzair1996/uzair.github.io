@@ -14,6 +14,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  
 }
 
 a {
@@ -435,39 +436,60 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.skills-section {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
 }
 
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
+.skills-section h2 {
+  text-align: left;
+  padding-left: 10px; /* Adjust the padding as needed */
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skills-category {
+  margin-bottom: 20px;
 }
 
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
+.skills-category h3 {
+  text-align: left;
+  padding-left: 10px; /* Adjust the padding as needed */
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #149ddd;
+.skills-row {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  background: #333; /* Darker shade for 3D effect */
+  border: 1px solid #555; /* Slight border for depth */
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Shadow for 3D effect */
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.skill-item img {
+  width: 70px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  margin-bottom: 8px;
+}
+
+.skill-item p {
+  margin: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Resume
