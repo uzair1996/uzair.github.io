@@ -507,6 +507,8 @@ section {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #050d18;
+  background-color: rgb(238, 241, 244);
+
 }
 
 .resume .resume-item {
@@ -557,6 +559,12 @@ section {
   top: 0;
   background: #fff;
   border: 2px solid #1f5297;
+}
+.gap {
+  height: 50px; /* Gives the div a fixed height */
+  width: 100%; /* Ensures the div stretches across the full width of its container */
+  margin: 20px 0; /* Adds 20px margin above and below the div */
+  padding: 10px 0; /* Adds 10px padding inside the top and bottom of the div */
 }
 
 /*--------------------------------------------------------------
