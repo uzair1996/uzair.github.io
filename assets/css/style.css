@@ -1147,159 +1147,88 @@ section {
 
 /* Projects Section */
 .projects {
-  padding: 60px 0;
-  
+  padding: 40px 0;
+  background: #f8f9fa;
+}
+
+.section-title {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .project-item {
-  margin-bottom: 30px;
+  flex: 0 1 45%; /* Adjusts for 3 items per row */
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
-.project-wrap {
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-}
-
-.project-wrap:hover {
+.project-item:hover {
   transform: translateY(-10px);
 }
 
-.project-info {
-  padding: 15px;
-  text-align: center;
-}
-
-.project-info h4 {
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.project-info p {
-  margin-bottom: 0;
-  font-size: 15px;
-}
-
-.img-fluid {
-  max-width: 100%;
+.project-image {
+  width: 100%;
   height: auto;
-}
-
-
-.github-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
-  padding: 8px 12px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.github-link:hover {
-  background-color: #6cc644; /* GitHub's brand color for hover state */
-}
-
-.github-link i {
-  margin-right: 5px;
-}
-
-.projects .project-content {
-  background: #fff;
-  margin: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-
-}
-
-.projects img {
-  max-width: 100%;
   border-radius: 8px;
   margin-bottom: 15px;
 }
 
-.projects .btn-outline-secondary {
-  border-color: #6c757d;
-  color: #6c757d;
-  transition: all 0.3s ease-in-out;
+.project-item h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
-.projects .btn-outline-secondary:hover {
-  background-color: #6c757d;
-  color: #fff;
+.project-item p {
+  font-size: 12px;
+  color: #666;
+  flex-grow: 1; /* Ensures tags and button align at bottom */
 }
 
-.projects-slider {
-  overflow: hidden;
-}
-
-.slide {
+.skill-tags {
   display: flex;
-  flex-direction: row; /* Arrange projects in a column */
-  align-items: center;
-  justify-content: center;
-  min-width: 100%; /* Each slide takes full width of the container */
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
 }
 
-.slide-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.project-content {
-  width: 45%; /* Each project takes up half the width in the grid */
-  padding: 20px; /* Adjust padding for spacing */
-  margin-bottom: 20px; /* Adjust space between projects */
-
-}
-
-
-.slider-nav {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.slide-prev, .slide-next {
-  cursor: pointer;
+.tag {
   background-color: #007bff;
-  border: none;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 0 10px;
+  color: white;
+  padding: 5px 10px;
   border-radius: 5px;
+  font-size: 12px;
 }
 
-.slide-prev:hover, .slide-next:hover {
-  background: #0056b3;
-}
-
-
-.carousel-indicators {
+.github-link {
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
   text-align: center;
-  margin-top: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.github-link:hover {
+  background-color: #555;
 }
 
-.dot.active {
-  background-color: #717171;
+@media (max-width: 768px) {
+  .project-item {
+      flex: 0 1 100%; /* Full width on smaller screens */
+  }
 }
-
-
-
